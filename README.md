@@ -23,4 +23,9 @@ module.exports = { people, ages };
 // usage
 const xyz = require("./peoples");
 console.log(xyz.ages, xyz.people);
+
+// You can also use destructring
+const { people, ages } = require("./peoples");
 ```
+
+Ypu can also use destructring
