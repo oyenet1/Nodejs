@@ -13,4 +13,14 @@ const xyz = require("./peoples");
 console.log(xyz);
 ```
 
-Let use it in another place
+You can also export object like this
+
+```js
+const people = ["Bowofade", "Adeoluwa", "Babalola", "Ajanaku", "Akindele"];
+const ages = [23, 56, 32, 16, 67];
+module.exports = { people, ages };
+
+// usage
+const xyz = require("./peoples");
+console.log(xyz.ages, xyz.people);
+```
